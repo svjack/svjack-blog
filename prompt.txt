@@ -1,0 +1,69 @@
+#### huggingface blog:
+https://github.com/huggingface/blog
+#### pw for hf $ja778899CK
+
+OpenPrompt:
+#### https://github.com/PaddlePaddle/PaddleNLP/blob/b6a718bc8719c83cccc911c44237fe2268b4a9a3/docs/advanced_guide/prompt.md
+
+#### https://github.com/huggingface/setfit
+- multilanguage: https://github.com/huggingface/setfit/blob/ebee18ceaecb4414482e0a6b92c97f3f99309d56/scripts/transformers/run_fewshot_multilingual.py
+
+#### https://github.com/thunlp/OpenPrompt
+#### https://jishuin.proginn.com/p/763bfbd69df6
+
+#### https://zhuanlan.zhihu.com/p/496340353
+
+#### https://github.com/sunyilgdx/NSP-BERT#Demos
+
+Few shot with NLU -> FewNLU
+#### https://fewnlu.github.io
+
+https://github.com/huggingface/setfit
+->
+Few shot NLU may sensitive for hyperparam search (few data information, so hyperparam as info)
+setfit run_hp_search_optuna to search (from huggingface) The default sampler is TPESampler (Tree)
+
+Fow shot in PaddleNLP always take to Prompt packages.
+
+https://aistudio.baidu.com/aistudio/projectdetail/3989506?channelType=0&channel=0
+->
+paddlenlp/prompt/template.py:
+- template.json (load_from)
+
+https://github.com/PaddlePaddle/PaddleNLP/tree/develop/applications/text_classification/multi_label/few-shot
+some sense of intent summary
+file protocol:
+\t: some sense of summary(generator)
+==: some sense of extraction(NER)
+
+different prompt template example dir:
+https://github.com/PaddlePaddle/PaddleNLP/tree/0a618c70f95eeea29ac084d6cf16d26fad289dd5/examples/few_shot
+pet p-tuning below few_shot dir , into label_normalized (zh label mapping)
+label_normalized desc by task_label_description.py (or efl)
+
+datasets.list_datasets
+
+Image prompt-to-prompt (prompt edit image generator)
+https://github.com/google/prompt-to-prompt
+
+finetune text2img scripts in diffusers:
+https://github.com/huggingface/diffusers/tree/60c384bcd2b6f0cf9569fa8999ac8f7eff98b31a/examples/text_to_image
+
+'''
+tokenizer = CLIPTokenizer.from_pretrained(args.pretrained_model_name_or_path, subfolder="tokenizer")
+text_encoder = CLIPTextModel.from_pretrained(args.pretrained_model_name_or_path, subfolder="text_encoder")
+vae = AutoencoderKL.from_pretrained(args.pretrained_model_name_or_path, subfolder="vae")
+unet = UNet2DConditionModel.from_pretrained(args.pretrained_model_name_or_path, subfolder="unet")
+'''
+-> multilanguage version:
+https://github.com/FreddeFrallan/Multilingual-CLIP
+-> sentencetransformers version:
+sentence-transformers/clip-ViT-B-32-multilingual-v1
+
+stable-diffusion in Japanese (another language)
+https://huggingface.co/blog/japanese-stable-diffusion ( based on 🧨 Diffusers.)
+https://github.com/rinnakk/japanese-stable-diffusion
+'''
+CLIP tokenizer is basically for English. To achieve make a Japanese-specific model based on Stable Diffusion, we had 2 stages inspired by PITI.
+'''
+used clip model: https://github.com/rinnakk/japanese-clip
