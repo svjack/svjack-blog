@@ -34,7 +34,7 @@ PaddleNLP introduce OpenPrompt's method to train its Few Shot learning applicati
 In its [label_normalized/](https://github.com/PaddlePaddle/PaddleNLP/tree/0a618c70f95eeea29ac084d6cf16d26fad289dd5/examples/few_shot/p-tuning/label_normalized) path is the id to text mapping defined for its template. and the description of it is
  located in [task_label_description.py](https://github.com/PaddlePaddle/PaddleNLP/blob/0a618c70f95eeea29ac084d6cf16d26fad289dd5/examples/few_shot/efl/task_label_description.py).
 
-CV scope: (not a kind of prompt for train but for "edit")
+CV scope: (not a kind of prompt for train but for "edit")<br/>
 <b>Stable Diffusion</b><br/>
 [Stable Diffusion](https://github.com/CompVis/stable-diffusion]) is a latent text-to-image diffusion model that you can use prompt
 to get a image sample from model.
