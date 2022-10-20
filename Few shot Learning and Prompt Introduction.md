@@ -27,12 +27,14 @@ which use TPESampler (Tree) as default with the help of [optuna](https://github.
 When discuss multilanguage support it has:
 [run_fewshot_multilingual.py](https://github.com/huggingface/setfit/blob/ebee18ceaecb4414482e0a6b92c97f3f99309d56/scripts/transformers/run_fewshot_multilingual.py) use model_id as "xlm-roberta-base", When we discuss Non-English or multilanguage model
 we really care about if it exist a tokenizer that segment and map
-the input language favorable.
+the input language favorable.<br/>
+A self-tried SetFit demo in Chinese located [here](https://github.com/svjack/NLP-demos-with-translate/blob/main/setfit_text_classification_multilabel_zh.md)
 
 <b>PaddleNLP</b><br/>
 PaddleNLP introduce OpenPrompt's method to train its Few Shot learning applications, some examples can be seen in its project in [few_shot](https://github.com/PaddlePaddle/PaddleNLP/tree/0a618c70f95eeea29ac084d6cf16d26fad289dd5/examples/few_shot), which contain both English and Chinese examples.
 In its [label_normalized/](https://github.com/PaddlePaddle/PaddleNLP/tree/0a618c70f95eeea29ac084d6cf16d26fad289dd5/examples/few_shot/p-tuning/label_normalized) path is the id to text mapping defined for its template. and the description of it is
- located in [task_label_description.py](https://github.com/PaddlePaddle/PaddleNLP/blob/0a618c70f95eeea29ac084d6cf16d26fad289dd5/examples/few_shot/efl/task_label_description.py).
+ located in [task_label_description.py](https://github.com/PaddlePaddle/PaddleNLP/blob/0a618c70f95eeea29ac084d6cf16d26fad289dd5/examples/few_shot/efl/task_label_description.py).<br/>
+A self-tried PaddleNLP's P-tuning Few shot classification demo in Chinese located [here](https://github.com/svjack/NLP-demos-with-translate/tree/main/ethos_to_p_tuning)
 
 CV scope: (not a kind of prompt for train but for "edit")<br/>
 <b>Stable Diffusion</b><br/>
