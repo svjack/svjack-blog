@@ -64,7 +64,9 @@ There are many versions of CLIP that can lookup, contains: [Multilingual-CLIP](h
 
 So i train three models on [English](https://huggingface.co/svjack/Stable-Diffusion-Pokemon-en), [Japanese](https://huggingface.co/svjack/Stable-Diffusion-Pokemon-ja) and [Chinese](https://huggingface.co/svjack/Stable-Diffusion-Pokemon-zh) and release them in my [HuggingFace Hub](https://huggingface.co/svjack), you can download it and try yourself, the training codes have pushed to https://github.com/svjack/Stable-Diffusion-Pokemon .
 
+<div style="text-align:center">
 <img width="747" alt="截屏2022-11-01 17 01 32" src="https://user-images.githubusercontent.com/27874014/199198214-bab6dfda-2618-4fff-aaa0-ed85299735c6.png">
+ </div>
 
 If you are interested in it, you can take a look at it. And compare different files to seek how i change the code to make it satisfy different languages.
 
