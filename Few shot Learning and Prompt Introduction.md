@@ -61,3 +61,5 @@ vae = AutoencoderKL.from_pretrained(args.pretrained_model_name_or_path, subfolde
 unet = UNet2DConditionModel.from_pretrained(args.pretrained_model_name_or_path, subfolder="unet")
 ```
 There are many versions of CLIP that can lookup, contains: [Multilingual-CLIP](https://github.com/FreddeFrallan/Multilingual-CLIP) and [japanese-stable-diffusion](https://github.com/rinnakk/japanese-stable-diffusion), the latter give a trainable example in [japanese-clip](https://github.com/rinnakk/japanese-clip) which implement them in japanese scene.
+
+So i train three models on [English](https://huggingface.co/svjack/Stable-Diffusion-Pokemon-en), [Japanese](https://huggingface.co/svjack/Stable-Diffusion-Pokemon-ja) and [Chinese](https://huggingface.co/svjack/Stable-Diffusion-Pokemon-zh) and release them in my [HuggingFace Hub](https://huggingface.co/svjack), you can download it and try yourself, the training codes have pushed to https://github.com/svjack/Stable-Diffusion-Pokemon .
