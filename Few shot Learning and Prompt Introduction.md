@@ -76,9 +76,7 @@ If you are interested in it, you can take a look at it. And compare different fi
 
 </br>
 
-#### Adding Conditional Control to Text-to-Image
-
-Diffusion Models 
+#### Adding Conditional Control to Text-to-Image Diffusion Models 
 
 </br>
 steps:0</br>
@@ -106,3 +104,8 @@ by the progressive generation property of diffusion models where layout/shape
 emerges at early denoising steps while semantically meaningful details appear at
 later steps during the denoising process, 
 </br>
+
+#### MIXTURE OF DIFFUSERS FOR SCENE COMPOSITION AND HIGH RESOLUTION IMAGE GENERATION
+
+</br>
+space mixuture by constant converge gaussian weight.
