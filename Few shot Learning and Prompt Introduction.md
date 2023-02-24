@@ -70,5 +70,39 @@ So i train three models on [English](https://huggingface.co/svjack/Stable-Diffus
 
 If you are interested in it, you can take a look at it. And compare different files to seek how i change the code to make it satisfy different languages.
 
+</br>
 
+### variation of prompts with step in training of stable diffusion:
 
+</br>
+
+#### Adding Conditional Control to Text-to-Image
+
+Diffusion Models 
+
+</br>
+steps:0</br>
+static</br>
+50% drop prompts to make Canny edge outstanding.</br>
+</br>
+
+During the training, we randomly replace 50% text prompts ct with empty strings. This facilitates
+ControlNet’s capability to recognize semantic contents from input condition maps, e.g., Canny edge
+maps or human scribbles, etc. This is mainly because when the prompt is not visible for the SD
+model, the encoder tends to learn more semantics from input control maps as a replacement for the
+prompt.
+
+</br>
+
+#### MagicMix: Semantic Mixing with Diffusion Models:
+
+</br>
+steps: [tmin, tmax]</br>
+dynamic</br>
+mix in a ratio in late steps to make content mixture.</br>
+</br>
+Motivated
+by the progressive generation property of diffusion models where layout/shape
+emerges at early denoising steps while semantically meaningful details appear at
+later steps during the denoising process, 
+</br>
